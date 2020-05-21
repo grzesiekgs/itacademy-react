@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { List } from './components/List/List';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const LIST_ITEMS = [
+  {
+    label: 'first',
+    value: 1,
+    checked: false,
+  },
+  {
+    label: 'second',
+    value: 2,
+    checked: false,
+  },
+  {
+    label: 'third',
+    value: 3,
+    checked: true,
+  },
+  {
+    label: 'fourth',
+    value: 4,
+    checked: false,
+  },
+];
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<List items={LIST_ITEMS} />, document.getElementById('root'));
