@@ -7,7 +7,7 @@ const LIST_ITEMS = [
   {
     label: 'first',
     value: 1,
-    checked: false,
+    checked: true,
   },
   {
     label: 'second',
@@ -26,4 +26,9 @@ const LIST_ITEMS = [
   },
 ];
 
-ReactDOM.render(<List items={LIST_ITEMS} />, document.getElementById('root'));
+/* <List items={LIST_ITEMS} key={1} />, */
+
+ReactDOM.render(
+  [<List items={LIST_ITEMS} key={2} />],
+  document.getElementById('root')
+);

@@ -3,11 +3,21 @@ import './List.css';
 import { ListItem } from '../ListItem/ListItem';
 
 export class List extends Component {
+  state = {
+    selected: [],
+    clickCount: 0,
+  };
+
   constructor(props) {
     super(props);
 
+    const selected = props.items
+      .filter((item) => item.checked)
+      .map((item) => item.value);
+
     this.state = {
-      selected: [],
+      clickCount: 0,
+      selected,
     };
   }
 
@@ -26,25 +36,28 @@ export class List extends Component {
 
     this.setState({
       selected,
+      clickCount: this.state.clickCount + 1,
     });
-    console.log('handleItemClick');
-    console.log('handleItemClick', this.state.selected);
+
+    console.log('handleItemClick', this);
   };
 
   render() {
-    const { selected } = this.state;
+    const { selected, clickCount } = this.state;
+    console.log('IM RENDERING', JSON.stringify(this.state, null, 2));
 
     return (
       <ul className={'list'}>
-        {this.props.items.map((item, index) => (
+        {this.props.items.map((item) => (
           <ListItem
             label={item.label}
             value={item.value}
             checked={selected.includes(item.value)}
-            key={index}
+            key={item.label}
             onClick={this.handleItemClick}
           />
         ))}
+        {clickCount}
       </ul>
     );
   }
