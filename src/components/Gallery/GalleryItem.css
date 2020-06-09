@@ -1,0 +1,6 @@
+.gallery__item {
+  box-sizing: border-box;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 10px;
+}

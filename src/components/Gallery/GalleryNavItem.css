@@ -1,0 +1,16 @@
+.gallery__nav-item {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 424px;
+  height: 240px;
+  overflow: hidden;
+  margin: 0 10px;
+  border: 2px solid rgba(45, 93, 184, 0.5);
+  transition: border 0.2s ease-in-out;
+  filter: brightness(0.5);
+}
+
+.gallery__nav-item--active {
+  border: 2px solid rgba(45, 93, 184, 0.8);
+  filter: brightness(1);
+}
