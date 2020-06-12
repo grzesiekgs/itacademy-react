@@ -6,6 +6,10 @@
   height: 100vh;
 }
 
+.gallery:focus {
+  background-color: pink;
+}
+
 .gallery__items-list {
   box-sizing: border-box;
   display: flex;

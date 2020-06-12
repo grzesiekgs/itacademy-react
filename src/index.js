@@ -13,8 +13,12 @@ import { Gallery } from './components/Gallery/Gallery';
 //   console.log('selected item: ', selectedItem);
 
 const IMAGES = [
-  'https://www.placecage.com/c/1920/1080',
-  'https://www.fillmurray.com/1920/1080',
+  'https://images.unsplash.com/photo-1551482850-d649f078ed01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+  'https://images.unsplash.com/flagged/photo-1551301622-6fa51afe75a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+  'https://images.unsplash.com/photo-1551367595-a5727dbb8394?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+  'https://images.unsplash.com/photo-1551368321-dddf8a05c459?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  // 'https://www.placecage.com/c/1920/1080',
+  // 'https://www.fillmurray.com/1920/1080',
   'http://placekitten.com/g/1920/1080',
   'http://placehold.it/1920x1080',
   'https://via.placeholder.com/1920x1080/FF0000/FFFFFF?Text=Fifht',

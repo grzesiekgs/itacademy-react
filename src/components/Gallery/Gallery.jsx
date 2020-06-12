@@ -47,6 +47,8 @@ export class Gallery extends PureComponent {
       .width;
 
     this.setState({ listWidth });
+
+    window.addEventListener('keydown', this.handleKeyDown);
   }
 
   handleNavItemClick = (event) => {
@@ -79,6 +81,16 @@ export class Gallery extends PureComponent {
     const { activeItem, listWidth } = this.state;
 
     this.itemsListRef.current.scrollTo(activeItem * listWidth, 0);
+  };
+
+  handleKeyDown = (event) => {
+    const { keyCode } = event;
+
+    if (keyCode === 37) {
+      this.handleNavLeft();
+    } else if (keyCode === 39) {
+      this.handleNavRight();
+    }
   };
 
   render() {
