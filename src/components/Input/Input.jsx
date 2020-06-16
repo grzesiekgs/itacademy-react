@@ -8,6 +8,8 @@ const Styles = {
 
 export const Input = ({
   value,
+  name,
+  placeholder,
   onChange,
   onFocus,
   onBlur,
@@ -17,6 +19,8 @@ export const Input = ({
     type={'text'}
     className={joinClasses(Styles.input, className)}
     value={value}
+    name={name}
+    placeholder={placeholder}
     onChange={onChange}
     onFocus={onFocus}
     onBlur={onBlur}
