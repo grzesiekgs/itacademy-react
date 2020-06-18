@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Component } from 'react';
 import { conditionClass, joinClasses } from '../../utils/classNames';
 import './Dropdown.css';
 import clickObserver from '../../utils/clickOberser';
@@ -78,7 +78,7 @@ export class Dropdown extends PureComponent {
       conditionClass(this.state.open, Styles.contentOpen),
       contentClassName
     );
-
+    console.log('Dropdown render');
     return (
       <div
         ref={this.containerRef}

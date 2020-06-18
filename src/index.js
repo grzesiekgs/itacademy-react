@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import ReactDOM from 'react-dom';
-// import { SearchInput } from './components/SearchInput/SearchInput';
+import { SearchInput } from './components/SearchInput/SearchInput';
 import './index.css';
 import { UserForm } from './components/UserForm/UserForm';
 import { ModalsManager } from './components/ModalsManager/ModalsManager';
@@ -10,6 +10,8 @@ import {
   UserContext,
   UserContextProvider,
 } from './contexts/UserContextProvider';
+import { TwoBinary } from './components/Binary/TwoBinaries';
+import { BinaryWithHooks } from './components/Binary/BinaryWithHooks';
 // import { DummyGroup } from './components/DummyGroup/DummyGroup';
 // import { Gallery } from './components/Gallery/Gallery';
 
@@ -49,12 +51,12 @@ const App = () => (
   <UserContextProvider>
     <ModalsManager />
     <SomeComponent />
+    <BinaryWithHooks />
   </UserContextProvider>
 );
 
 const SomeComponent = () => (
   <div>
-    <CheckboxGroup items={ITEMS} />
     <UserForm />
   </div>
 );

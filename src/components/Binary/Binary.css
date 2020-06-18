@@ -1,0 +1,18 @@
+.binary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+}
+
+.binary--0 {
+  color: #fff;
+  background-color: #000;
+}
+
+.binary--1 {
+  color: #000;
+  background-color: #fff;
+}

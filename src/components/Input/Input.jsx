@@ -14,15 +14,18 @@ export const Input = ({
   onFocus,
   onBlur,
   className,
-}) => (
-  <input
-    type={'text'}
-    className={joinClasses(Styles.input, className)}
-    value={value}
-    name={name}
-    placeholder={placeholder}
-    onChange={onChange}
-    onFocus={onFocus}
-    onBlur={onBlur}
-  />
-);
+}) => {
+  console.log('Input render');
+  return (
+    <input
+      type={'text'}
+      className={joinClasses(Styles.input, className)}
+      value={value}
+      name={name}
+      placeholder={placeholder}
+      onChange={onChange}
+      onFocus={onFocus}
+      onBlur={onBlur}
+    />
+  );
+};
